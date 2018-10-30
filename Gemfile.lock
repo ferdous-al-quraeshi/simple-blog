@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/cldwalker/hirb.git
+  revision: 264f72c7c0f0966001e802414a5b0641036c7860
+  specs:
+    hirb (0.7.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -169,6 +175,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  hirb!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
