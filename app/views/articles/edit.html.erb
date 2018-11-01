@@ -1,6 +1,6 @@
-<h1>New Article Page</h1>
+<h1>Edit Article Page</h1>
 
-<%= form_with scope: :article, url: articles_path, local: true do |f| %>
+<%= form_with model: @article, local: true do |f| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
