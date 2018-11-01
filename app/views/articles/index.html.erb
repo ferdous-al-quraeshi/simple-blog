@@ -1,21 +1,21 @@
 <h1>All Articles</h1>
 
-<p><%= link_to 'New article', new_article_path %></p>
+<p class="new-article"><%= link_to 'New article', new_article_path,  :class=>"btn btn__new" %></p>
 
 <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
-    <th>Actions</th>
+    <th colspan="3" class="actions-header">Actions</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Delete', article_path(article),
+      <td><%= link_to 'Show', article_path(article), :class=>"btn btn__show" %></td>
+      <td><%= link_to 'Edit', edit_article_path(article), :class=>"btn btn__edit" %></td>
+      <td><%= link_to 'Delete', article_path(article), :class=>"btn btn__delete",
                                 method: 'delete',
                                 data: {confirm: 'Are you sure?'}
       %></td>

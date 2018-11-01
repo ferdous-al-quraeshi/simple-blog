@@ -1,3 +1,73 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  text-decoration: none;
+  &:active,
+  &:hover,
+  &:visited,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  tr {
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    th {
+      font-size: 1.3rem;
+      color: white;
+      background-color: #5f5f5f;
+      &.actions-header {
+        text-align: center;
+      }
+    }
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #5f5f5f;
+  &__new {
+    background-color: #c8ffc8;
+  }
+  &__show {
+    background-color: #aceaf0;
+  }
+  &__edit {
+    background-color: #fffbc9;
+  }
+  &__delete {
+    background-color: #febfbf;
+  }
+  &__back {
+    background-color: #f2f2f2;
+  }
+}
+.new-article {
+  text-align: left;
+  .btn {
+    padding: 10px;
+  }
+}
