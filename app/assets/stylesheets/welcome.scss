@@ -64,6 +64,9 @@ table {
   &__back {
     background-color: #f2f2f2;
   }
+  &:hover {
+    color: white;
+  }
 }
 .txt-red {
   color: red;
