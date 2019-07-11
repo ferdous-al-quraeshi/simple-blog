@@ -44,7 +44,17 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  
+  // Avatar implementation withing an H1 tag
+  .gravatar {
+    float: left;
+    margin-right: 20px;
+  }
+  .email {
+    font-size: 0.5em;
+    font-weight: 400;
+    color: #5d5d5d;
+  }
 }
 
 h2 {
